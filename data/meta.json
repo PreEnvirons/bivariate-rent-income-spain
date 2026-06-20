@@ -1,0 +1,372 @@
+{
+  "breaks": {
+    "alquiler": [6.15, 8.84],
+    "renta": [13117, 16948]
+  },
+  "provinces": [
+    {
+      "code": "01",
+      "name": "Araba/Álava",
+      "ccaa": "País Vasco",
+      "n": 240,
+      "n_class": 193
+    },
+    {
+      "code": "02",
+      "name": "Albacete",
+      "ccaa": "Castilla-La Mancha",
+      "n": 294,
+      "n_class": 192
+    },
+    {
+      "code": "03",
+      "name": "Alicante",
+      "ccaa": "C. Valenciana",
+      "n": 1225,
+      "n_class": 1042
+    },
+    {
+      "code": "04",
+      "name": "Almería",
+      "ccaa": "Andalucía",
+      "n": 463,
+      "n_class": 305
+    },
+    {
+      "code": "05",
+      "name": "Ávila",
+      "ccaa": "Castilla y León",
+      "n": 312,
+      "n_class": 85
+    },
+    {
+      "code": "06",
+      "name": "Badajoz",
+      "ccaa": "Extremadura",
+      "n": 553,
+      "n_class": 237
+    },
+    {
+      "code": "07",
+      "name": "Balears, Illes",
+      "ccaa": "Illes Balears",
+      "n": 662,
+      "n_class": 603
+    },
+    {
+      "code": "08",
+      "name": "Barcelona",
+      "ccaa": "Cataluña",
+      "n": 3620,
+      "n_class": 3352
+    },
+    {
+      "code": "09",
+      "name": "Burgos",
+      "ccaa": "Castilla y León",
+      "n": 587,
+      "n_class": 227
+    },
+    {
+      "code": "10",
+      "name": "Cáceres",
+      "ccaa": "Extremadura",
+      "n": 412,
+      "n_class": 168
+    },
+    {
+      "code": "11",
+      "name": "Cádiz",
+      "ccaa": "Andalucía",
+      "n": 924,
+      "n_class": 596
+    },
+    {
+      "code": "12",
+      "name": "Castellón/Castelló",
+      "ccaa": "C. Valenciana",
+      "n": 441,
+      "n_class": 347
+    },
+    {
+      "code": "13",
+      "name": "Ciudad Real",
+      "ccaa": "Castilla-La Mancha",
+      "n": 420,
+      "n_class": 206
+    },
+    {
+      "code": "14",
+      "name": "Córdoba",
+      "ccaa": "Andalucía",
+      "n": 621,
+      "n_class": 339
+    },
+    {
+      "code": "15",
+      "name": "Coruña, A",
+      "ccaa": "Galicia",
+      "n": 886,
+      "n_class": 579
+    },
+    {
+      "code": "16",
+      "name": "Cuenca",
+      "ccaa": "Castilla-La Mancha",
+      "n": 310,
+      "n_class": 68
+    },
+    {
+      "code": "17",
+      "name": "Girona",
+      "ccaa": "Cataluña",
+      "n": 533,
+      "n_class": 386
+    },
+    {
+      "code": "18",
+      "name": "Granada",
+      "ccaa": "Andalucía",
+      "n": 674,
+      "n_class": 428
+    },
+    {
+      "code": "19",
+      "name": "Guadalajara",
+      "ccaa": "Castilla-La Mancha",
+      "n": 394,
+      "n_class": 119
+    },
+    {
+      "code": "20",
+      "name": "Gipuzkoa",
+      "ccaa": "País Vasco",
+      "n": 545,
+      "n_class": 520
+    },
+    {
+      "code": "21",
+      "name": "Huelva",
+      "ccaa": "Andalucía",
+      "n": 367,
+      "n_class": 190
+    },
+    {
+      "code": "22",
+      "name": "Huesca",
+      "ccaa": "Aragón",
+      "n": 286,
+      "n_class": 122
+    },
+    {
+      "code": "23",
+      "name": "Jaén",
+      "ccaa": "Andalucía",
+      "n": 508,
+      "n_class": 248
+    },
+    {
+      "code": "24",
+      "name": "León",
+      "ccaa": "Castilla y León",
+      "n": 450,
+      "n_class": 242
+    },
+    {
+      "code": "25",
+      "name": "Lleida",
+      "ccaa": "Cataluña",
+      "n": 388,
+      "n_class": 235
+    },
+    {
+      "code": "26",
+      "name": "Rioja, La",
+      "ccaa": "La Rioja",
+      "n": 343,
+      "n_class": 199
+    },
+    {
+      "code": "27",
+      "name": "Lugo",
+      "ccaa": "Galicia",
+      "n": 279,
+      "n_class": 140
+    },
+    {
+      "code": "28",
+      "name": "Madrid",
+      "ccaa": "Madrid",
+      "n": 4417,
+      "n_class": 4191
+    },
+    {
+      "code": "29",
+      "name": "Málaga",
+      "ccaa": "Andalucía",
+      "n": 1074,
+      "n_class": 855
+    },
+    {
+      "code": "30",
+      "name": "Murcia",
+      "ccaa": "Murcia",
+      "n": 1222,
+      "n_class": 950
+    },
+    {
+      "code": "31",
+      "name": "Navarra",
+      "ccaa": "Navarra",
+      "n": 576,
+      "n_class": 372
+    },
+    {
+      "code": "32",
+      "name": "Ourense",
+      "ccaa": "Galicia",
+      "n": 259,
+      "n_class": 122
+    },
+    {
+      "code": "33",
+      "name": "Asturias",
+      "ccaa": "Asturias",
+      "n": 843,
+      "n_class": 667
+    },
+    {
+      "code": "34",
+      "name": "Palencia",
+      "ccaa": "Castilla y León",
+      "n": 277,
+      "n_class": 100
+    },
+    {
+      "code": "35",
+      "name": "Palmas, Las",
+      "ccaa": "Canarias",
+      "n": 710,
+      "n_class": 562
+    },
+    {
+      "code": "36",
+      "name": "Pontevedra",
+      "ccaa": "Galicia",
+      "n": 731,
+      "n_class": 439
+    },
+    {
+      "code": "37",
+      "name": "Salamanca",
+      "ccaa": "Castilla y León",
+      "n": 532,
+      "n_class": 190
+    },
+    {
+      "code": "38",
+      "name": "Santa Cruz de Tenerife",
+      "ccaa": "Canarias",
+      "n": 672,
+      "n_class": 537
+    },
+    {
+      "code": "39",
+      "name": "Cantabria",
+      "ccaa": "Cantabria",
+      "n": 467,
+      "n_class": 372
+    },
+    {
+      "code": "40",
+      "name": "Segovia",
+      "ccaa": "Castilla y León",
+      "n": 276,
+      "n_class": 89
+    },
+    {
+      "code": "41",
+      "name": "Sevilla",
+      "ccaa": "Andalucía",
+      "n": 1364,
+      "n_class": 872
+    },
+    {
+      "code": "42",
+      "name": "Soria",
+      "ccaa": "Castilla y León",
+      "n": 216,
+      "n_class": 42
+    },
+    {
+      "code": "43",
+      "name": "Tarragona",
+      "ccaa": "Cataluña",
+      "n": 542,
+      "n_class": 417
+    },
+    {
+      "code": "44",
+      "name": "Teruel",
+      "ccaa": "Aragón",
+      "n": 285,
+      "n_class": 64
+    },
+    {
+      "code": "45",
+      "name": "Toledo",
+      "ccaa": "Castilla-La Mancha",
+      "n": 530,
+      "n_class": 302
+    },
+    {
+      "code": "46",
+      "name": "Valencia/Valéncia",
+      "ccaa": "C. Valenciana",
+      "n": 1807,
+      "n_class": 1621
+    },
+    {
+      "code": "47",
+      "name": "Valladolid",
+      "ccaa": "Castilla y León",
+      "n": 570,
+      "n_class": 347
+    },
+    {
+      "code": "48",
+      "name": "Bizkaia",
+      "ccaa": "País Vasco",
+      "n": 929,
+      "n_class": 855
+    },
+    {
+      "code": "49",
+      "name": "Zamora",
+      "ccaa": "Castilla y León",
+      "n": 319,
+      "n_class": 77
+    },
+    {
+      "code": "50",
+      "name": "Zaragoza",
+      "ccaa": "Aragón",
+      "n": 878,
+      "n_class": 607
+    },
+    {
+      "code": "51",
+      "name": "Ceuta",
+      "ccaa": "Ceuta",
+      "n": 56,
+      "n_class": 45
+    },
+    {
+      "code": "52",
+      "name": "Melilla",
+      "ccaa": "Melilla",
+      "n": 44,
+      "n_class": 34
+    }
+  ]
+}

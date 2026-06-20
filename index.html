@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alquiler × renta — España (visor bivariado por secciones censales)</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/plotly.js/2.27.0/plotly.min.js"></script>
+
+  <link rel="stylesheet" href="css/style.css">
+  <script type="module" src="js/app.js"></script>
+</head>
+
+<body>
+  <header>
+    <div class="header-inner">
+      <h1>Alquiler &times; renta por persona — España</h1>
+      <p class="subtitle">
+        Secciones censales &middot; SERPAVI 2024 &times; ADRH (INE) 2021 &middot;
+        Coropleta bivariada por terciles nacionales &middot; selecciona una provincia
+      </p>
+    </div>
+  </header>
+
+  <main>
+    <aside class="sidebar">
+      <label class="sidebar-label" for="area-select">Provincia</label>
+      <select id="area-select"><!-- poblado por app.js --></select>
+
+      <hr>
+
+      <div id="area-info" class="area-info"></div>
+
+      <hr>
+
+      <div class="howto">
+        <strong>C&oacute;mo leer</strong>
+        <p>Cada secci&oacute;n se clasifica por el <em>tercil nacional</em> de
+        alquiler (eje horizontal) y de renta (eje vertical). Pasa el rat&oacute;n
+        para ver los valores; <em>haz clic en una casilla de la leyenda</em> para
+        resaltar ese grupo en el mapa y en la dispersi&oacute;n.</p>
+        <p class="stress-note">Celdas divergentes:
+        <span class="chip" style="background:#5ac8c8"></span> alquiler alto + renta baja
+        (estr&eacute;s de accesibilidad) frente a
+        <span class="chip" style="background:#be64ac"></span> alquiler bajo + renta alta.</p>
+      </div>
+
+      <div class="sidebar-footer">
+        <p id="breaks-note"></p>
+        <p>Gris = sin dato de alquiler (supresi&oacute;n SERPAVI; frecuente en zonas rurales).</p>
+        <p>Fuentes: SERPAVI (MIVAU) y Atlas de Distribuci&oacute;n de Renta de los Hogares (INE).</p>
+        <p>Licencia: <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a></p>
+      </div>
+    </aside>
+
+    <div class="content">
+      <nav class="tabs">
+        <button class="tab-btn active" data-tab="map">Mapa</button>
+        <button class="tab-btn" data-tab="scatter">Dispersi&oacute;n alquiler–renta</button>
+      </nav>
+      <div class="tab-panels">
+        <div id="panel-map" class="tab-panel active">
+          <div id="map" class="map-container"></div>
+        </div>
+        <div id="panel-scatter" class="tab-panel">
+          <div id="plot-scatter" class="plot-container"></div>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

@@ -1,0 +1,21 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# R / RStudio
+.Rproj.user/
+.Rhistory
+.RData
+*.Rproj
+
+# Node / build artefacts (if ever added)
+node_modules/
+dist/
+
+# Editor
+.vscode/
+.idea/
+
+# Logs
+*.log
