@@ -10,7 +10,7 @@ const BIV_COLORS = {
   "1-3": "#be64ac", "2-3": "#8c62aa", "3-3": "#3b4994",
 };
 const CLASSES = ["1-1", "2-1", "3-1", "1-2", "2-2", "3-2", "1-3", "2-3", "3-3"];
-const GRIS_NA = "#cccccc";
+const NA_COLOR = "#e0d6c3"; // arena cálida: "sin dato", distinto de la rampa fría
 const TERCIL_LBL = { 1: "bajo", 2: "medio", 3: "alto" };
 
 const TILE_URL = "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png";
@@ -73,7 +73,7 @@ async function loadProv(code) {
 
   if (layer) { map.removeLayer(layer); layer = null; }
   layer = L.geoJSON(cache[code], {
-    style: (f) => ({ fillColor: f.properties.fill_col || GRIS_NA, fillOpacity: 0.85, color: "#fff", weight: 0.25 }),
+    style: (f) => ({ fillColor: f.properties.bi_class ? f.properties.fill_col : NA_COLOR, fillOpacity: 0.85, color: "#fff", weight: 0.25 }),
     onEachFeature: bindTip,
   }).addTo(map);
 
@@ -169,6 +169,7 @@ function addLegend() {
       `<div class="biv-grid-wrap"><div class="biv-yaxis">Mayor renta →</div>` +
       `<div class="biv-grid">${cells}</div></div>` +
       `<div class="biv-xaxis">Mayor alquiler →</div>` +
+      `<div class="biv-na"><span class="biv-na-sw" style="background:${NA_COLOR}"></span>Sin dato de alquiler</div>` +
       `<button class="biv-reset" type="button">limpiar selección</button>`;
     L.DomEvent.disableClickPropagation(div);
     div.querySelectorAll(".biv-cell").forEach((c) =>

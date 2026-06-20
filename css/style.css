@@ -179,3 +179,8 @@ main {
 .secc-tip .tip-muted { color: #888; }
 
 .area-ccaa { color: var(--muted); font-size: 0.8rem; margin: -4px 0 8px; }
+
+/* "Sin dato" en la leyenda y en el pie */
+.biv-na { display: flex; align-items: center; gap: 6px; margin-top: 8px; font-size: 0.7rem; color: var(--muted); }
+.biv-na-sw { width: 13px; height: 13px; border-radius: 2px; border: 1px solid rgba(0,0,0,0.15); display: inline-block; }
+.na-chip { display: inline-block; width: 11px; height: 11px; border-radius: 2px; background: #e0d6c3; border: 1px solid rgba(0,0,0,0.15); vertical-align: middle; margin-right: 2px; }
